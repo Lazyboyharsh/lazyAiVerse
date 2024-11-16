@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Lazy-AiVerse offers a comprehensive platform to explore AI tools for web design, image editing, video creation, and more.">
+  <meta name="keywords"
+    content="AI tools, web design, image editing, video creation, AI for education, creative processes, automation, innovation">
+  <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+  <title>Lazy-AiVerse</title>
+
+
+  <!--  Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!--  External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/search.css">
+
+  <!--  Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="#">Lazy-AiVerse</a></div>
+    
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#explore-tools">Explore Tools</a></li>
+    
+        <!-- Dynamic Section -->
+        <li id="user-section" class="hidden">
+          <a href="javascript:void(0)" id="username-btn">Username</a>
+          <ul id="user-menu" class="dropdown hidden">
+            <li><a href="javascript:void(0)" id="logout-btn">Logout</a></li>
+          </ul>
+        </li>
+        <li id="login-btn"><a href="landing.html">Login</a></li>
+      </ul>
+    </nav>    
+  </header>
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to Ai-Verse</h1>
+      <p class="hero-description">A world of AI exploration awaits.</p>
+      <a href="#explore-tools" class="hero-button">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Lazy-AiVerse</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Lazy-AiVerse is a hub for discovering the most cutting-edge AI tools available today. Our platform is
+          dedicated to helping users explore artificial intelligence applications for web design, photo editing, image
+          generation, writing, video creation, education, and more.</p>
+        <p>We believe in the power of AI to revolutionize creative processes and everyday tasks. Whether you're a
+          developer, designer, content creator, or student, AI-Verse provides a wealth of AI tools to make your work
+          smarter and faster.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/about_web.jpg" alt="About Lazy-AiVerse">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2 class="section-title">Amazing Features</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <i class="fas fa-robot"></i>
+        <h3>AI Tools</h3>
+        <p>Discover tools that revolutionize your tasks.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Automation</h3>
+        <p>Streamline processes with AI automation.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-rocket"></i>
+        <h3>Innovation</h3>
+        <p>Bring creativity to your workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Tools Section -->
+  <section id="explore-tools" class="explore-tools">
+    <h2 class="section-title">Explore AI Tools</h2>
+
+
+    <div id="search-bar" class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for tools...">
+      <ul id="toolList">
+        <!-- Your tool list items will go here -->
+      </ul>
+      <p id="notFound">AI not found. This tool will be added later.</p>
+    </div>
+
+    <div class="tools-category">
+      <h3>AI Tools for Website & Designs</h3>
+      <div class="tools-list">
+        <a href="https://www.canva.com/" target="_blank">
+          <div class="tool-item">Canva AI </div>
+        </a>
+        <a href="https://www.framer.com/" target="_blank">
+          <div class="tool-item">Farmer AI </div>
+        </a>
+        <a href="https://websim.ai/" target="_blank">
+          <div class="tool-item">Websim AI </div>
+        </a>
+        <a href="https://www.notion.so/help/guides/build-a-website-with-notion-in-seconds-no-coding-required"
+          target="_blank">
+          <div class="tool-item">Notion </div>
+        </a>
+        <a href="https://10web.io/" target="_blank">
+          <div class="tool-item">10 Web </div>
+        </a>
+        <a href="https://durable.co/" target="_blank">
+          <div class="tool-item">Durable AI </div>
+        </a>
+        <a href="https://www.hubspot.com/marketing/ai-website-generator-am?irclickid=3GiwOQyJjxyKWAeVgq0-23dAUkCyuQRtqza9V40&irgwc=1&mpid=5293708&utm_id=am5293708&utm_medium=am&utm_source=am5293708&utm_campaign=amcid_3GiwOQyJjxyKWAeVgq0-23dAUkCyuQRtqza9V40_irpid_5293708"
+          target="_blank">
+          <div class="tool-item">Website.generator </div>
+        </a>
+        <a href="https://screenshottocode.com/" target="_blank">
+          <div class="tool-item">Screenshot to code </div>
+        </a>
+
+      </div>
+    </div>
+    <div class="tools-category">
+      <h3>AI Tools for Image Editing</h3>
+      <div class="tools-list">
+        <a href="https://www.adobe.com/products/photoshop.html?clickref=1100lzD7sYxQ&mv=affiliate&mv2=pz&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign"
+          target="_blank">
+          <div class="tool-item">Photoshop AI</div>
+        </a>
+        <a href="https://misgif.app/" target="_blank">
+          <div class="tool-item">Misgif AI</div>
+        </a>
+        <a href="https://firefly.adobe.com/?clickref=1101lzIJNhJs&mv=affiliate&mv2=pz&as_camptype=&as_channel=affiliate&as_source=partnerize&as_campaign"
+          target="_blank">
+          <div class="tool-item">Adobe Firefly 3</div>
+        </a>
+        <a href="https://magnific.ai/" target="_blank">
+          <div class="tool-item">Magnific AI</div>
+        </a>
+        <a href="https://www.pixelcut.ai/" target="_blank">
+          <div class="tool-item">Pixelcut</div><a>
+            <a href="https://www.remove.bg/" target="_blank">
+              <div class="tool-item">Remove bg</div><a>
+                <a href="https://faceswapper.ai/?ref" target="_blank">
+                  <div class="tool-item">Faceswapper AI</div><a>
+                    <a href="https://www.watermarkremover.io/?fp_ref=partnerstephens742" target="_blank">
+                      <div class="tool-item">WatermarkRemover.io</div><a>
+                        <a href="https://faceswapper.ai/#google_vignette" target="_blank">
+                          <div class="tool-item">Faceswapper AI</div>
+                        </a>
+                        <a href="https://snapedit.app/" target="_blank">
+                          <div class="tool-item">Snapedit</div>
+                        </a>
+      </div>
+    </div>
+    <div class="tools-category">
+      <h3>AI Tools for Image Generators</h3>
+      <div class="tools-list">
+        <a href="https://www.midjourney.com/home" target="_blank">
+          <div class="tool-item">Midjourney</div>
+        </a>
+        <a href="https://stablediffusionweb.com/" target="_blank">
+          <div class="tool-item">Stable Diffusion</div>
+        </a>
+        <a href="https://app.leonardo.ai/auth/login?callbackUrl=%2F%3Fvia%3D" target="_blank">
+          <div class="tool-item">Leonardo AI</div>
+        </a>
+        <a href="https://blackforestlabs.ai/" target="_blank">
+          <div class="tool-item">Flux.1</div>
+        </a>
+        <a href="https://ideogram.ai/t/explore" target="_blank">
+          <div class="tool-item">Ideogram AI</div>
+        </a>
+        <a href="https://www.freepik.com/" target="_blank">
+          <div class="tool-item">Freepik</div>
+        </a>
+        <a href="https://lexica.art/" target="_blank">
+          <div class="tool-item">Lexica Art</div>
+        </a>
+        <a href="https://civitai.com/" target="_blank">
+          <div class="tool-item">Civit AI</div>
+        </a>
+        <a href="https://openai.com/index/dall-e-3/" target="_blank">
+          <div class="tool-item">Dall-E-3</div>
+        </a>
+        <a href="https://www.krea.ai/home" target="_blank">
+          <div class="tool-item">Krea AI</div>
+        </a>
+      </div>
+    </div>
+    <div class="tools-category">
+      <h3>AI Tools for Writing & SEO</h3>
+      <div class="tools-list">
+        <a href="https://rytr.me/?via" target="_blank">
+          <div class="tool-item">Rytr</div>
+        </a>
+        <a href="https://quillbot.com/?utm_campaign=partnerstack&pscd=try.quillbot.com&ps_partner_key=cGFydG5lcnN0ZXBoZW5zNzQy&ps_xid=dAk7yxHjjBKEc3&gsxid=dAk7yxHjjBKEc3&gspk=cGFydG5lcnN0ZXBoZW5zNzQy"
+          target="_blank">
+          <div class="tool-item">Quillbot</div>
+        </a>
+        <a href="https://www.semrush.com/contentshake/?irclickid=3GiwOQyJjxyKWAeVgq0-23dAUkCyvIQtqza9V40&utm_source=affiliate&utm_Medium=impact&utm_campaign=5293708&utm_terms=&utm_content=&irgwc=1&utm_medium=impact&utm_term="
+          target="_blank">
+          <div class="tool-item">Content Shake AI</div>
+        </a>
+        <a href="https://undetectable.ai/?_by" target="_blank">
+          <div class="tool-item">Undetectable.AI</div>
+        </a>
+        <a href="https://writesonic.com/?fpr" target="_blank">
+          <div class="tool-item">WriteSonic</div>
+        </a>
+        <a href="https://www.hubspot.com/ai-content-writer/am?irclickid=3GiwOQyJjxyKWAeVgq0-23dAUkCyvN3Fqza9V40&irgwc=1&mpid=5293708&utm_id=am5293708&utm_medium=am&utm_source=am5293708&utm_campaign=amcid_3GiwOQyJjxyKWAeVgq0-23dAUkCyvN3Fqza9V40_irpid_5293708"
+          target="_blank">
+          <div class="tool-item">Content AI writer</div>
+        </a>
+        <a href="https://www.jasper.ai/" target="_blank">
+          <div class="tool-item">Jasper AI</div>
+        </a>
+        <a href=" https://paraphrasingtool.ai/" target="_blank">
+          <div class="tool-item">Paraphrasing Tool</div>
+        </a>
+        <a href="https://gptzero.me/" target="_blank">
+          <div class="tool-item">Gptzero</div>
+        </a>
+        <a href="https://smodin.io/" target="_blank">
+          <div class="tool-item">Smodin</div>
+        </a>
+      </div>
+    </div>
+    <div class="tools-category">
+      <h3>AI Tools for Video Generators</h3>
+      <div class="tools-list">
+        <a href="https://openai.com/index/sora/" target="_blank">
+          <div class="tool-item">Sora AI</div>
+        </a>
+        <a href="https://heygen.com/?sid=rewardful&via" target="_blank">
+          <div class="tool-item">HeyGen</div>
+        </a>
+        <a href="https://lumalabs.ai/dream-machine" target="_blank">
+          <div class="tool-item">LumaLab AI</div>
+        </a>
+        <a href="https://invideo.io/?irclickid=3GiwOQyJjxyKWAeVgq0-23dAUkCyvK21qza9V40&mpid=5293708&irgwc=1"
+          target="_blank">
+          <div class="tool-item">Invideo AI</div>
+        </a>
+        <a href="https://www.viggle.ai/home" target="_blank">
+          <div class="tool-item">Viggle AI</div>
+        </a>
+        <a href="https://hailuoai.com/video" target="_blank">
+          <div class="tool-item">Conch Video</div>
+        </a>
+        <a href="https://fliki.ai/?via=aixploria" target="_blank">
+          <div class="tool-item">Fliki</div>
+        </a>
+        <a href="https://synthesia.io/?via" target="_blank">
+          <div class="tool-item">Synthesia</div>
+        </a>
+        <a href="https://emu-video.metademolab.com/" target="_blank">
+          <div class="tool-item">Emu Video</div>
+        </a>
+        <a href="https://kaiber.ai/" target="_blank">
+          <div class="tool-item">Kaiber AI</div>
+        </a>
+      </div>
+    </div>
+    <div class="tools-category">
+      <h3>AI Tools for Education and Studies</h3>
+      <div class="tools-list">
+        <a href="https://www.perplexity.ai/pro?referral_code=74L0DIRK" target="_blank">
+          <div class="tool-item">Perplexity Ai</div>
+        </a>
+        <a href="https://explorer.globe.engineer/" target="_blank">
+          <div class="tool-item">Globe.Engineer</div>
+        </a>
+        <a href="https://poe.com/login" target="_blank">
+          <div class="tool-item">Poe.com</div>
+        </a>
+        <a href="https://www.chatpdf.com/?via" target="_blank">
+          <div class="tool-item">Chatpdf</div>
+        </a>
+        <a href="https://www.notion.so/product/ai?utm_source=affl&utm_medium=partnerstephens742&pscd=affiliate.notion.so&ps_partner_key=cGFydG5lcnN0ZXBoZW5zNzQy&ps_xid=s0sF0bNzT9Zgh1&gsxid=s0sF0bNzT9Zgh1&gspk=cGFydG5lcnN0ZXBoZW5zNzQy"
+          target="_blank">
+          <div class="tool-item">Notion AI</div>
+        </a>
+        <a href="https://fireflies.ai/?fpr" target="_blank">
+          <div class="tool-item">Fireflies AI</div>
+        </a>
+        <a href="https://www.deepl.com/en/translator" target="_blank">
+          <div class="tool-item">DeepL</div>
+        </a>
+        <a href="https://quizlet.com/gb" target="_blank">
+          <div class="tool-item">Quizlet</div>
+        </a>
+        <a href="https://www.wolframalpha.com/" target="_blank">
+          <div class="tool-item">WolframAlpha</div>
+        </a>
+        <a href="https://resoomer.com/" target="_blank">
+          <div class="tool-item">Resoomer</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Optional) -->
+  <footer class="footer">
+    <p>&copy; 2024 Lazy-AiVerse. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a> |
+      <a href="#terms">Terms of Service</a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- Include External JavaScript -->
+  <script src="js/script.js"></script>
+  <script src="js/search.js"></script>
+  <!-- Include GSAP for animations (optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+</body>
+
+</html>
