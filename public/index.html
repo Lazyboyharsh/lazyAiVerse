@@ -31,23 +31,23 @@
   <header>
     <nav class="navbar">
       <div class="logo"><a href="#">Lazy-AiVerse</a></div>
-
+    
       <ul class="nav-links">
-        <!-- Close Button -->
-        <li class="close-btn"><a href="javascript:void(0)">✖</a></li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#explore-tools">Explore Tools</a></li>
-        <li><a href="landing.html">Login</a></li>
+    
+        <!-- Dynamic Section -->
+        <li id="user-section" class="hidden">
+          <a href="javascript:void(0)" id="username-btn">Username</a>
+          <ul id="user-menu" class="dropdown hidden">
+            <li><a href="javascript:void(0)" id="logout-btn">Logout</a></li>
+          </ul>
+        </li>
+        <li id="login-btn"><a href="landing.html">Login</a></li>
       </ul>
-      <!-- Hamburger Menu for Mobile -->
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
+    </nav>    
   </header>
 
 

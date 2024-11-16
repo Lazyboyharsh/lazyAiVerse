@@ -21,27 +21,27 @@ const db = new sqlite3.Database('./server/db/database.sqlite', (err) => {
 
 // Login Route
 router.post('/login', (req, res) => {
-  const { username, password } = req.body;
-
-  if (!username || !password) {
-    return res.status(400).json({ success: false, message: 'Missing username or password' });
-  }
-
-  db.get(
-    'SELECT * FROM users WHERE username = ? AND password = ?',
-    [username, password],
-    (err, row) => {
-      if (err) {
-        res.status(500).json({ error: 'Database error' });
-      } else if (row) {
-        res.json({ success: true, message: 'Login successful', user: { id: row.id, username: row.username } });
-      } else {
-        res.status(400).json({ success: false, message: 'Invalid credentials' });
-      }
+    const { username, password } = req.body;
+  
+    if (!username || !password) {
+      return res.status(400).json({ success: false, message: 'Missing username or password' });
     }
-  );
-});
-
+  
+    db.get(
+      'SELECT * FROM users WHERE username = ? AND password = ?',
+      [username, password],
+      (err, row) => {
+        if (err) {
+          res.status(500).json({ error: 'Database error' });
+        } else if (row) {
+          res.json({ success: true, message: 'Login successful', user: { id: row.id, username: row.username } });
+        } else {
+          res.status(400).json({ success: false, message: 'Invalid credentials' });
+        }
+      }
+    );
+  });
+  
 // Signup Route
 router.post('/signup', (req, res) => {
   const { username, password, email } = req.body;
