@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Auth Container */
+  .auth-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .auth-container h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Toggle Buttons */
+  .auth-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-tab {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .auth-tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .auth-tab:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Auth Form */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .auth-form.hidden {
+    display: none;
+  }
+  
+  .auth-form label {
+    font-size: 0.9rem;
+    color: #555555;
+    text-align: left;
+  }
+  
+  .auth-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .auth-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Submit Button */
+  .auth-button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .auth-container {
+      padding: 20px;
+    }
+  
+    .auth-tab {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .auth-form input {
+      font-size: 0.9rem;
+    }
+  
+    .auth-button {
+      font-size: 0.9rem;
+    }
+  }
+  
