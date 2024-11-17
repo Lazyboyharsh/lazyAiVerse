@@ -21,23 +21,24 @@
   <link rel="stylesheet" href="css/search.css">
 
   <!--  Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo"><a href="#">Lazy-AiVerse</a></div>
-    
+  
       <ul class="nav-links">
+        <!-- Close Button -->
+        <li class="close-btn"><a href="javascript:void(0)">✖</a></li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#explore-tools">Explore Tools</a></li>
-    
+  
         <!-- Dynamic Section -->
         <li id="user-section" class="hidden">
           <a href="javascript:void(0)" id="username-btn">Username</a>
@@ -47,8 +48,16 @@
         </li>
         <li id="login-btn"><a href="landing.html">Login</a></li>
       </ul>
-    </nav>    
+  
+      <!-- Hamburger Menu for Mobile -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
   </header>
+  
 
 
 
@@ -342,7 +351,10 @@
   <!-- Include External JavaScript -->
   <script src="js/script.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/auth.js"></script>
   <!-- Include GSAP for animations (optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 </body>
 
