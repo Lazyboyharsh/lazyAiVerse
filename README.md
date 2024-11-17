@@ -51,12 +51,16 @@ Here's a brief overview of the project structure:
 
 ```
 project/
+├── node_modules
 ├── public/
 │   ├── css/
 │   │   └── styles.css
+|   |   └── search.css
+|   |   └── landingcss.css
 │   ├── js/
 │   │   ├── script.js
 │   │   └── auth.js
+│   │   └── search.js
 │   ├── images/
 │   └── landing.html
 ├── server/
@@ -66,5 +70,7 @@ project/
 │   ├── routes/
 │   │   └── authRoutes.js
 └── package.json
+└── package-lock.json
+└── .gitignore
 
 ```
